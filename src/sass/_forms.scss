@@ -1,0 +1,89 @@
+.container {
+  width: 600px;
+  margin: 5rem auto;
+  padding: 2rem;
+  text-transform: capitalize;
+  background: #13232f;
+  color: $color;
+
+  .toggle {
+    @include flex(space-between);
+
+    a {
+      display: inline-block;
+      font-size: 1.3rem;
+      padding: 0.8rem 0;
+      width: 50%;
+      text-align: center;
+      background: rgba(104, 103, 103, 0.5);
+      color: $color;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $color;
+        background: $green;
+      }
+    }
+
+    .active {
+      color: $color;
+      background: $green;
+
+      &:hover {
+        background: darken($green, 10%);
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 2.5rem 0;
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: $color;
+  }
+
+  .full-name {
+    width: 100%;
+    @include flex(space-between);
+
+    .fname,
+    .lname {
+      width: 48%;
+    }
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin: 3rem auto 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    outline: none;
+    padding: 0.8rem 0;
+    cursor: pointer;
+    border: none;
+    background: $green;
+    color: $color;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: darken($green, 5%);
+    }
+  }
+
+  span {
+    color: $color;
+  }
+}
+
+.home {
+  @include flex(center);
+  margin-top: 1rem;
+
+  a {
+    font-size: 2rem;
+    color: $main-color;
+    text-transform: capitalize;
+  }
+}
