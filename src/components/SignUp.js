@@ -85,7 +85,7 @@ export default withFormik({
       .string()
       .lowercase()
       .email("Invalid email")
-      .required("required"),
+      .required("Plese enter email"),
     password: yup
       .string()
       .min(5, "Too Short!")
