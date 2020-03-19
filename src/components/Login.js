@@ -14,7 +14,7 @@ const Login = () => {
         </NavLink>
       </div>
 
-      <h2>sing up for free</h2>
+      <h2>welcome back!</h2>
       <Form>
         <label>
           email
