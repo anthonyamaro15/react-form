@@ -6,11 +6,11 @@ const SignUp = () => {
   return (
     <div className="container">
       <div className="toggle">
-        <NavLink to="signup" activeClassName="active">
+        <NavLink to="/signup" activeClassName="active">
           sign up
         </NavLink>
-        <NavLink to="login" activeClassName="active">
-          log ing
+        <NavLink to="/login" activeClassName="active">
+          log in
         </NavLink>
       </div>
 
@@ -38,12 +38,10 @@ const SignUp = () => {
           password
           <Field type="password" name="password" className="max-width" />
         </label>
-        <span>hello</span>
 
         <label>
           confirm password
           <Field type="password" name="confirm" className="max-width" />
-          <span>hello</span>
         </label>
 
         <button type="submit">get started</button>

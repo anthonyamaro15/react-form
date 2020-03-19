@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +8,7 @@
 
 body {
   background: #f4f4f4;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -19,13 +22,18 @@ span {
 input {
   display: block;
   width: 100%;
-
+  color: grey;
   font-size: 1.2rem;
-  padding: 0.3rem;
+  padding: 0.5rem 0.4rem;
   outline: none;
-  margin-bottom: 0.4rem;
+  margin: 0.4rem 0;
   background: transparent;
   border: 1px solid grey;
+
+  &:focus {
+    background: transparent;
+    color: grey;
+  }
 }
 
 label {
@@ -55,16 +63,33 @@ label {
       // border: 1px solid red;
       width: 50%;
       text-align: center;
-      background: #1ab188;
+      // background: #1ab188;
+      background: rgba(104, 103, 103, 0.5);
+      color: grey;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: white;
+        background: #1ab188;
+      }
+    }
+
+    .active {
       color: white;
+      background: #1ab188;
+
+      &:hover {
+        background: darken(#1ab188, 10%);
+      }
     }
   }
 
   h2 {
     text-align: center;
     margin: 2.5rem 0;
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: #f4f4f4;
   }
 
   .full-name {
@@ -82,7 +107,7 @@ label {
   button {
     display: block;
     width: 100%;
-    margin: 1rem auto 0;
+    margin: 3rem auto 0;
     font-size: 1.2rem;
     text-transform: uppercase;
     outline: none;
@@ -91,5 +116,14 @@ label {
     border: none;
     background: #1ab188;
     color: white;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: darken(#1ab188, 5%);
+    }
+  }
+
+  span {
+    color: #f4f4f4;
   }
 }
