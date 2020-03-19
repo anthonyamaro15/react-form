@@ -1,0 +1,8 @@
+$main-color: grey;
+$color: #f4f4f4;
+$green: #1ab188;
+
+@mixin flex($justify) {
+  display: flex;
+  justify-content: $justify;
+}
