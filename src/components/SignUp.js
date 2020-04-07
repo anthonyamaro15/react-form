@@ -96,13 +96,14 @@ export default withFormik({
       .oneOf([yup.ref("password")], "Password does not match!")
       .required("please confirm password")
   }),
-  handleSubmit: (values, { resetForm, setStatus }) => {
-    axios
-      .post("https://reqres.in/api/users/", values)
-      .then(res => {
-        setStatus(res.data);
-        resetForm();
-      })
-      .catch(err => console.log(err));
+  handleSubmit: (values, { setStatus }) => {
+    //  axios
+    //    .post("https://reqres.in/api/users/", values)
+    //    .then(res => {
+    //      setStatus(res.data);
+    //      resetForm();
+    //    })
+    //    .catch(err => console.log(err));
+    setStatus(values);
   }
 })(SignUp);
